@@ -59,14 +59,13 @@
            
         }
       
-      
-    
 
     .gallery-wrapper {
             background-image: url('green_background.jpeg');
-    padding: 20px 0;
+            padding: 20px 0;
 }
 
+      
 .gallery {
     display: grid;
     gap: 20px;
@@ -110,13 +109,73 @@
             padding: 0 10px;
         }
       
+      
+.form-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Playfair Display', serif;
+  color: #333;
+  
+}
+      
+      
+      input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+      
+      
+input[type="reset"],
+input[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+      
+      
+input[type="submit"] {
+  background: #3A4528;
+  color: #fff;
+}
+      
+ input[type="submit"]:hover {
+  background: #8F9779;
+}
+      
+      input[type="reset"] {
+  background: lightgrey;
+  color: #333;
+}
+
+input[type="reset"]:hover {
+  background: #e0e0e0;
+}
+
+      .button-container {
+  display: flex;
+}
+
+
+ 
+      
     </style>
 </head>
 <body>
     <nav class="navbar">
         <li><a href="home.html">Home</a></li>
         <li><a href="bouquet.html">Bouquet Gallery</a></li>
-        <li><a href="plants.html">Workshops</a></li>
+        <li><a href="Workshops.html">Workshops</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact Us</a></li>
     </nav>
@@ -159,6 +218,26 @@
             <h2 class="bouquet-name"> Floral Centerpiece Workshop </h2>
             <p class="bouquet-description"> We offer exclusive private workshops for groups, where attendees can craft beautiful floral centerpieces while also enjoying a fun atmosphere with friends or colleagues. This workshops is perfect for a variety of private events, including corporate gatherings, company events, team-building exercises, ladies night or any social event. </p>
         </div>
-    </main>
+      
+      
+      <div class="form-container">
+
+      <form action="index.php" method="POST">
+        
+        <h3> Wanna be the first to know about our upcoming workshops? Sign up below! </h3>
+        
+      <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="enhanced.florals@gmail.com"> <br>
+        
+        
+        <input type="reset">
+                <input type="submit">
+        </form>
+      
+     
+        </main>
+            </div>
+
+
 </body>
 </html>
