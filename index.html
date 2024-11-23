@@ -126,7 +126,7 @@
       input[type="email"] {
   width: 100%;
   padding: 10px;
-  font-size: 20px;
+  font-size: 17px;
   margin-top: 5px;
   margin-bottom: 15px;
   border-radius: 5px;
@@ -135,10 +135,10 @@
       
       
 input[type="reset"],
-input[type="submit"] {
-  padding: 10px 20px;
+input[type="submit"] {          
+  padding: 10px 17px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
 }
       
@@ -165,8 +165,6 @@ input[type="reset"]:hover {
   display: flex;
 }
 
-
- 
       
     </style>
 </head>
@@ -219,23 +217,21 @@ input[type="reset"]:hover {
         </div>
       
       
-      <div class="form-container">
-
-      <form action="index.php" method="POST">
-        
-        <h3> Wanna be the first to know about our upcoming workshops? Sign up below! </h3>
-        
-      <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="enchanced.florals@gmail.com"> <br>
-        
-        
-        <input type="reset">
-                <input type="submit">
+         <div class="form-container">
+        <form action="index.php" method="POST">
+          <h3> Wanna be the first to know about our upcoming workshops? Sign up below and you'll receive a confirmation months before our next one! </h3>
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="enchanced.florals@gmail.com"> <br>
+          <div class="button-container">
+            <input type="reset">
+            <input type="submit">
+          </div>
         </form>
+      </div>
       
-     
-        </main>
-            </div>
+    </main> 
+  </div>
+
 
 
 </body>
