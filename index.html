@@ -38,10 +38,9 @@
         }
 
       
-      
       .workshop-section {
             background-image: url('bg_1.jpeg');
-            background-position: center;
+            background-position: center -200px;
             text-align: center;
             padding: 80px 20px;
         }
@@ -53,17 +52,16 @@
         }
       
         .workshop-section p {
-            font-size: 20px;
+            font-size: 25px;
             max-width: 800px;
             margin: 0 auto;
            
-        }
-      
+        } 
 
     .gallery-wrapper {
-            background-image: url('green_background.jpeg');
+            background-image: url('background_2.jpeg');
             padding: 20px 0;
-}
+        }
 
       
 .gallery {
@@ -73,37 +71,36 @@
     max-width: 1200px;
     margin: 0 auto;
     background-color: white;
-    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-image: url('green_background.jpeg');
+    background-image: url('background_2.jpeg');
+  
 
 }
 
-
         .flower-card {
             background: white;
-            border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
             padding: 15px;
-          
+            border-radius: 10px;     
         }
 
         .flower-image {
             width: 95%;
             height: 400px;
             object-fit: cover;
-            border-bottom: 2px solid #3A4528;
+            border-radius: 10px;
+
         }
 
         .bouquet-name {
-            font-size: 20px;
+            font-size: 30px;
             margin: 15px 0 5px;
             color: #3A4528;
         }
 
         .bouquet-description {
-            font-size: 14px;
+            font-size: 20px;
             color: #666;
             padding: 0 10px;
         }
@@ -122,49 +119,72 @@
 
         }
       
+            
+/* 
+Code copied from: [https://www.w3schools.com/css/tryit.asp?filename=trycss_forms]
+Author: [W3 Schools]
+Name: ["Using CSS to style an HTML Form"]
+Description: [Taught me how to style forms using CSS]
+Date retrieved: [20 Nov, 2024]
+*/
       
       input[type="email"] {
-  width: 100%;
-  padding: 10px;
-  font-size: 17px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-      
-      
-input[type="reset"],
-input[type="submit"] {          
-  padding: 10px 17px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-      
-      
-input[type="submit"] {
-  background: #3A4528;
-  color: #fff;
-}
-      
- input[type="submit"]:hover {
-  background: #8F9779;
-}
-      
+        width: 100%;
+        padding: 10px;
+        font-size: 17px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+
+      input[type="submit"], input[type="reset"] {
+        padding: 10px 20px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        background-color: #3A4528;
+        color: #fff;
+      }
+
+
+      input[type="submit"] {
+        background: #3A4528;
+        color: #fff;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #8F9779;
+      }
+
       input[type="reset"] {
-  background: lightgrey;
-  color: #333;
-}
+        background-color: #B5B5B5;
+      }
 
-input[type="reset"]:hover {
-  background: #e0e0e0;
-}
+      input[type="reset"]:hover {
+        background-color: #C9C9C9;
+      }
 
-      .button-container {
-  display: flex;
-}
+            .button-container {
+        display: flex;
+      }
+      
+      table {
+        font-family: 'Playfair Display', serif;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 20px;
+        background-color: white;
+        }
 
+        td, th {
+            border: 1px solid black;
+            text-align: left;
+            padding: 8px;
+        }
       
     </style>
 </head>
@@ -185,7 +205,6 @@ input[type="reset"]:hover {
   
   <div class="gallery-wrapper">
 
-  
     <main class="gallery">
       
         <div class="flower-card">
@@ -216,6 +235,48 @@ input[type="reset"]:hover {
             <p class="bouquet-description"> We offer exclusive private workshops for groups, where attendees can craft beautiful floral centerpieces while also enjoying a fun atmosphere with friends or colleagues. This workshops is perfect for a variety of private events, including corporate gatherings, company events, team-building exercises, ladies night or any social event. </p>
         </div>
       
+       <div class="table-container">
+        <h2>Workshop Schedule</h2>
+        <table>
+            <tr>
+                <th>Workshop</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Price (CAD)</th>
+            </tr>
+            <tr>
+                <td>DIY Vase Arrangements</td>
+                <td>Dec 1, 2024</td>
+                <td>2:00 PM - 4:00 PM</td>
+                <td>$50</td>
+            </tr>
+            <tr>
+                <td>Flower Crown Workshop</td>
+                <td>Dec 17, 2024</td>
+                <td>10:00 AM - 12:00 PM</td>
+                <td>$40</td>
+            </tr>
+            <tr>
+                <td>Pressed Flower Art</td>
+                <td>Jan 5, 2024</td>
+                <td>3:00 PM - 5:00 PM</td>
+                <td>$35</td>
+            </tr>
+            <tr>
+                <td>Bouquet-Making Basics</td>
+                <td>Jan 21, 2024</td>
+                <td>1:00 PM - 3:00 PM</td>
+                <td>$45</td>
+            </tr>
+            <tr>
+                <td>Floral Centerpiece Workshop</td>
+                <td>Feb 12, 2024</td>
+                <td>5:00 PM - 7:00 PM</td>
+                <td>$60</td>
+            </tr>
+        </table>
+      </div>
+      
       
          <div class="form-container">
         <form action="index.php" method="POST">
@@ -231,8 +292,6 @@ input[type="reset"]:hover {
       
     </main> 
   </div>
-
-
 
 </body>
 </html>
